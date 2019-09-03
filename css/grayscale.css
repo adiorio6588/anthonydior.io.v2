@@ -181,10 +181,12 @@ header.masthead .masthead-img {
 
 hr.style12 {
 	height: 20px;
-	background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+	background: url(http://ibrahimjabbari.com/images/hr-12.png) repeat-x 0 0;
   border: 0;
-  width: 20rem;
+  width: 17rem;
 }
+
+
 
 .about-section {
   position: relative;

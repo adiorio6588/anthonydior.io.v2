@@ -4,48 +4,87 @@
 //round up
 
 
-function quartFunction() {
+// function quartFunction() {
    
-    var quartCreate = 16;
-    var quartSold1 = parseInt(prompt ('Quart Day 1'));
-    var quartSold2 = parseInt(prompt ('Quart Day 2'));
-    var quartSold3 = parseInt(prompt ('Quart Day 3'));
-    var quartSold4 = parseInt(prompt ('Quart Day 4'));
-    var quartSold5 = parseInt(prompt ('Quart Day 5'));
+//     var quartCreate = 16;
+//     var quartSold1 = parseInt(prompt ('Quart Day 1'));
+//     var quartSold2 = parseInt(prompt ('Quart Day 2'));
+//     var quartSold3 = parseInt(prompt ('Quart Day 3'));
+//     var quartSold4 = parseInt(prompt ('Quart Day 4'));
+//     var quartSold5 = parseInt(prompt ('Quart Day 5'));
 
-    var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3 + quartSold4 + quartSold5) / quartCreate;
-    var quartUserOrder = Math.ceil(quartOrderTotal) * quartCreate;
+//     var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3 + quartSold4 + quartSold5) / quartCreate;
+//     var quartUserOrder = Math.ceil(quartOrderTotal) * quartCreate;
+                                                                                                                                                         
+//     alert( "You should order " + quartUserOrder + " units");
+// }   
+
+
+//take number of full crates
+//times crates by unit count
+//subtract unit count from order total
+
+function quartFunction() {
+
+    var quartBackStock = parseInt(prompt ('How many full crates in the back stock?'));
+    var quartCrateToUnits = quartBackStock * 16;
+    var quartUnitSubtractCount = quartCrateToUnits; 
+   
+    var quartCrate = 16;
+    var quartSold1 = parseInt(prompt ('Quarts sold day 1'));
+    var quartSold2 = parseInt(prompt ('Quarts sold day 2'));
+    var quartSold3 = parseInt(prompt ('Quarts sold day 3'));
+    var quartSold4 = parseInt(prompt ('Quarts sold day 4'));
+    var quartSold5 = parseInt(prompt ('Quarts sold day 5'));
+
+    var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3 + quartSold4 + quartSold5) / quartCrate;
+    var quartSoldTotal = Math.ceil(quartOrderTotal) * quartCrate;
+
+    var quartUserOrder = quartSoldTotal - quartUnitSubtractCount;
                                                                                                                                                          
     alert( "You should order " + quartUserOrder + " units");
 }   
 
+
 function halfGallonFunction() {
 
-    var halfGallonCreate = 9;   
-    var halfGallonSold1 = parseInt(prompt ('Half Gallon Day 1'));
-    var halfGallonSold2 = parseInt(prompt ('Half Gallon Day 2'));
-    var halfGallonSold3 = parseInt(prompt ('Half Gallon Day 3'));
-    var halfGallonSold4 = parseInt(prompt ('Half Gallon Day 4'));
-    var halfGallonSold5 = parseInt(prompt ('Half Gallon Day 5'));
+    var halfGallonBackStock = parseInt(prompt ('How many full crates in the back stock?'));
+    var halfGallonCrateToUnits = halfGallonBackStock * 9;
+    var halfGallonUnitSubtractCount = halfGallonCrateToUnits; 
 
-    var halfGallonOrderTotal = (halfGallonSold1 + halfGallonSold2 + halfGallonSold3 + halfGallonSold4 + halfGallonSold5) / halfGallonCreate;
-    var halfGallonUserOrder = Math.ceil(halfGallonOrderTotal) * halfGallonCreate;
+    var halfGallonCrate = 9;   
+    var halfGallonSold1 = parseInt(prompt ('Half gallons sold day 1'));
+    var halfGallonSold2 = parseInt(prompt ('Half gallons sold day 2'));
+    var halfGallonSold3 = parseInt(prompt ('Half gallons sold day 3'));
+    var halfGallonSold4 = parseInt(prompt ('Half gallons sold day 4'));
+    var halfGallonSold5 = parseInt(prompt ('Half gallons sold day 5'));
+
+    var halfGallonOrderTotal = (halfGallonSold1 + halfGallonSold2 + halfGallonSold3 + halfGallonSold4 + halfGallonSold5) / halfGallonCrate;
+    var halfGallonSoldTotal = Math.ceil(halfGallonOrderTotal) * halfGallonCrate;
     
+    var halfGallonUserOrder = halfGallonSoldTotal - halfGallonUnitSubtractCount;
+
     alert( "You should order " + halfGallonUserOrder + " units");
 }
 
 function gallonFunction() {
 
-    var gallonCreate = 4;
-    var gallonSold1 = parseInt(prompt ('Full Gallon Day 1'));
-    var gallonSold2 = parseInt(prompt ('Full Gallon Day 2'));
-    var gallonSold3 = parseInt(prompt ('Full Gallon Day 3'));
-    var gallonSold4 = parseInt(prompt ('Full Gallon Day 4'));
-    var gallonSold5 = parseInt(prompt ('Full Gallon Day 5'));
+    var gallonBackStock = parseInt(prompt ('How many full crates in the back stock?'));
+    var gallonCrateToUnits = gallonBackStock * 4;
+    var gallonUnitSubtractCount = gallonCrateToUnits; 
 
-    var gallonOrderTotal = (gallonSold1 + gallonSold2 + gallonSold3 + gallonSold4 + gallonSold5) / gallonCreate;
-    var gallonUserOrder = Math.ceil(gallonOrderTotal) * gallonCreate;
+    var gallonCrate = 4;
+    var gallonSold1 = parseInt(prompt ('Gallons sold day 1'));
+    var gallonSold2 = parseInt(prompt ('Gallons sold day 2'));
+    var gallonSold3 = parseInt(prompt ('Gallons sold day 3'));
+    var gallonSold4 = parseInt(prompt ('Gallons sold day 4'));
+    var gallonSold5 = parseInt(prompt ('Gallons sold day 5'));
+
+    var gallonOrderTotal = (gallonSold1 + gallonSold2 + gallonSold3 + gallonSold4 + gallonSold5) / gallonCrate;
+    var gallonSoldTotal = Math.ceil(gallonOrderTotal) * gallonCrate;
     
+    var gallonUserOrder = gallonSoldTotal - gallonUnitSubtractCount;
+
     alert( "You should order " + gallonUserOrder + " units");
 }
 

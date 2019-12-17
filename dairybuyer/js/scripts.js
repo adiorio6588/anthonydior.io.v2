@@ -40,7 +40,7 @@ function quartFunction_Monday() {
     var quartSold2 = parseInt(prompt ('Quarts sold day 2'));
     var quartSold3 = parseInt(prompt ('Quarts sold day 3'));
 
-    var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3 + quartSold4 + quartSold5) / quartCrate;
+    var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3) / quartCrate;
     var quartSoldTotal = Math.ceil(quartOrderTotal) * quartCrate;
 
     var quartUserOrder = quartSoldTotal - quartUnitSubtractCount;
@@ -60,7 +60,7 @@ function halfGallonFunction_Monday() {
     var halfGallonSold2 = parseInt(prompt ('Half gallons sold day 2'));
     var halfGallonSold3 = parseInt(prompt ('Half gallons sold day 3'));
 
-    var halfGallonOrderTotal = (halfGallonSold1 + halfGallonSold2 + halfGallonSold3 + halfGallonSold4 + halfGallonSold5) / halfGallonCrate;
+    var halfGallonOrderTotal = (halfGallonSold1 + halfGallonSold2 + halfGallonSold3) / halfGallonCrate;
     var halfGallonSoldTotal = Math.ceil(halfGallonOrderTotal) * halfGallonCrate;
     
     var halfGallonUserOrder = halfGallonSoldTotal - halfGallonUnitSubtractCount;
@@ -79,7 +79,7 @@ function gallonFunction_Monday() {
     var gallonSold2 = parseInt(prompt ('Gallons sold day 2'));
     var gallonSold3 = parseInt(prompt ('Gallons sold day 3'));
 
-    var gallonOrderTotal = (gallonSold1 + gallonSold2 + gallonSold3 + gallonSold4 + gallonSold5) / gallonCrate;
+    var gallonOrderTotal = (gallonSold1 + gallonSold2 + gallonSold3) / gallonCrate;
     var gallonSoldTotal = Math.ceil(gallonOrderTotal) * gallonCrate;
     
     var gallonUserOrder = gallonSoldTotal - gallonUnitSubtractCount;
@@ -105,7 +105,7 @@ function quartFunction_Wednesday() {
     var quartSold5 = parseInt(prompt ('Quarts sold day 5'));
     var quartSold5 = parseInt(prompt ('Quarts sold day 6'));
 
-    var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3 + quartSold4 + quartSold5) / quartCrate;
+    var quartOrderTotal = (quartSold1 + quartSold2 + quartSold3 + quartSold4 + quartSold5 + quartSold6) / quartCrate;
     var quartSoldTotal = Math.ceil(quartOrderTotal) * quartCrate;
 
     var quartUserOrder = quartSoldTotal - quartUnitSubtractCount;
@@ -128,7 +128,7 @@ function halfGallonFunction_Wednesday() {
     var halfGallonSold5 = parseInt(prompt ('Half gallons sold day 5'));
     var halfGallonSold5 = parseInt(prompt ('Half gallons sold day 6'));
 
-    var halfGallonOrderTotal = (halfGallonSold1 + halfGallonSold2 + halfGallonSold3 + halfGallonSold4 + halfGallonSold5) / halfGallonCrate;
+    var halfGallonOrderTotal = (halfGallonSold1 + halfGallonSold2 + halfGallonSold3 + halfGallonSold4 + halfGallonSold5 + halfGallonSold6) / halfGallonCrate;
     var halfGallonSoldTotal = Math.ceil(halfGallonOrderTotal) * halfGallonCrate;
     
     var halfGallonUserOrder = halfGallonSoldTotal - halfGallonUnitSubtractCount;
@@ -150,7 +150,7 @@ function gallonFunction_Wednesday() {
     var gallonSold5 = parseInt(prompt ('Gallons sold day 5'));
     var gallonSold5 = parseInt(prompt ('Gallons sold day 6'));
 
-    var gallonOrderTotal = (gallonSold1 + gallonSold2 + gallonSold3 + gallonSold4 + gallonSold5) / gallonCrate;
+    var gallonOrderTotal = (gallonSold1 + gallonSold2 + gallonSold3 + gallonSold4 + gallonSold5 + gallonSold6) / gallonCrate;
     var gallonSoldTotal = Math.ceil(gallonOrderTotal) * gallonCrate;
     
     var gallonUserOrder = gallonSoldTotal - gallonUnitSubtractCount;
